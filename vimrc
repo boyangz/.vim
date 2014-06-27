@@ -1,3 +1,6 @@
+" something something pathogen
+call pathogen#infect()
+
 set backspace=indent,eol,start
 
 " show the current column/row of the cursor in the status line
@@ -35,3 +38,6 @@ set t_Co=256
 " turn syntax highlighting on 
 syntax on
 
+" set different background after 80 characters
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
